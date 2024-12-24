@@ -27,6 +27,9 @@ With this system, we aim to push the boundaries of emotion recognition technolog
 ### Dataset 📸
 The dataset consists of images depicting various facial expressions paired with emotion labels. The expressions cover emotions like **happiness**, **sadness**, **anger**, **surprise**, **fear**, **disgust**, and sometimes **contempt**. These images span across different demographics, ensuring representativeness.
 
+![Dataset](./images/dataset.jpg)
+
+
 ### Preprocessing 🧑‍💻
 Before training models, we preprocess the dataset to:
 - **Convert to grayscale** for simplicity.
@@ -86,6 +89,8 @@ We apply **data augmentation** techniques such as rotation, translation, scaling
 - **Random Forest**: 97% accuracy 💯
 - **CNN**: 96% accuracy 📉
 
+![Accuracy](./images/accuracy.jpg)
+
 These results indicate that the models are **highly effective** at recognizing emotions. Below is a comparison:
 
 - **SVM**: Demonstrates **perfect accuracy** by finding the optimal hyperplane.
@@ -100,9 +105,13 @@ These results indicate that the models are **highly effective** at recognizing e
 - K-Means was applied to **preprocessed data** to uncover patterns and group facial expressions.
 - This analysis helps in understanding data structure and revealing clusters of emotions that may require further focus.
 
+![Kmeans](./images/kmeans.jpg)
+
 ### Principal Component Analysis (PCA) 🔎
 - PCA reduces the dimensionality of the data while retaining key information.
 - This technique simplifies computation and enhances the clustering process.
+
+![PCA](./images/pca.jpg)
 
 ---
 
@@ -115,10 +124,16 @@ These results indicate that the models are **highly effective** at recognizing e
 - **CNN** exhibits the highest accuracy, with correct classifications primarily on the diagonal of the confusion matrix.
 - **SVM** and **Random Forest** show similar performance but may benefit from fine-tuning and additional metrics (e.g., precision, recall).
 
+  ![Confusion Matrix](./images/confusion.jpg)
+
+  ![Comparison](./images/compare.jpg)
+
 ---
 
 ## 📈 Feature Importance Distribution
 The plot visualizes **feature importance scores** for the **Random Forest** model using a bar chart. The higher the bar, the more significant the feature in decision-making.
+
+![Dataset](./images/feature.jpg)
 
 ---
 
